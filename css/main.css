@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 20px;
+	background-color: #1A243C;
+	font-size: 18px;
+}
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 4rem;
+	line-height: 115%;
+	color: #1A243C;
+	margin-bottom: 20px;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color: #1A243C;
+}
+
+a {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: #1A243C;
+}
+
+article.landing {
+	padding: 0px 80px 0 50px;
+}
+
+.container {
+	height: 100vh;
+	overflow: hidden;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #F4F3F0;
+	background-image: url("../img/bg_sashiko_color.png");
+	background-size: 60%;
+}
+
+.container img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.left-half {
+	flex: 1;
+}
+
+.right-half {
+	flex: 1;
+}
