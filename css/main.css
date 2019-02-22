@@ -2,6 +2,7 @@
 
 body {
 	margin: 0;
+	background-color: #F4F3F0;
 }
 
 h1 {
@@ -49,6 +50,10 @@ a {
 	font-weight: 700;
 	color: #1A243C;
 	text-decoration: none;
+}
+
+address {
+	font-style: normal;
 }
 
 a:hover {
@@ -109,10 +114,10 @@ article.landing {
 	align-items: center;
 	flex-direction: row;
 	background-color: #F4F3F0;
-	padding: 5%;
+	padding: 10% 5%;
 }
 
-.container-proj img {
+.container-proj img, .mini img, .about img {
 	max-width: 90%;
 	min-width: 300px;
 	height: auto;
@@ -121,6 +126,54 @@ article.landing {
 
 article.proj {
 	padding: 40px 80px 40px 50px;
+}
+
+.container-proj-mini {
+	display:flex;
+}
+
+.mini {
+	flex-direction: column;
+	padding: 10% 15%;
+	align-items: start;
+}
+
+.mini article.proj {
+	padding: 40px 80px 40px 0px;
+	align-items: start;
+}
+
+.about {
+	background-color: #1A243C;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	padding: 5% 5%;
+}
+
+.about-container {
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-left {
+	flex: 1.5;
+	order: 1;
+}
+
+.about-right {
+	flex: 1;
+	order: 2;
+}
+
+.about h2, .about p, .about a{
+	color: #F4F3F0;
+}
+
+.extra-snippet {
+	opacity: 0.4;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 700px) {
@@ -148,5 +201,4 @@ article.proj {
 		justify-content: center;
 		padding: 5%;
 	}
-}
 }
