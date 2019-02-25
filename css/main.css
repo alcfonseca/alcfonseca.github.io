@@ -94,7 +94,7 @@ article.landing {
 
 .container img {
 	max-width: 100%;
-	min-width: 300px;
+	min-width: 250px;
 	height: auto;
 	display: block;
 }
@@ -119,7 +119,7 @@ article.landing {
 
 .container-proj img, .mini img, .about img {
 	max-width: 90%;
-	min-width: 300px;
+	min-width: 250px;
 	height: auto;
 	display: block;
 }
@@ -129,7 +129,7 @@ article.proj {
 }
 
 .container-proj-mini {
-	display:flex;
+	display: flex;
 }
 
 .mini {
@@ -148,7 +148,7 @@ article.proj {
 	display: flex;
 	align-items: center;
 	flex-direction: row;
-	padding: 5% 5%;
+	padding: 2% 2% 2% 5%;
 }
 
 .about-container {
@@ -179,6 +179,7 @@ article.proj {
 @media only screen and (min-width: 320px) and (max-width: 700px) {
 	h1 {
 		margin-top: 0;
+		font-size: 3rem;
 	}
 
 	.container {
@@ -200,5 +201,31 @@ article.proj {
 		flex-direction: column;
 		justify-content: center;
 		padding: 5%;
+	}
+
+	.container-proj-mini {
+		flex-direction: column;
+	}
+
+	.container-proj-mini .left-half {
+		padding: 30px 30px 0;
+		order: 1;
+	}
+
+	.mini article.proj {
+		padding: 40px 80px 40px 50px;
+	}
+
+	.mini {
+		padding: 0;
+		align-items: center;
+	}
+
+	.about-container {
+	flex-direction: column;
+	}
+
+	.about article {
+		margin: 15%;
 	}
 }
