@@ -183,6 +183,7 @@ article.proj {
 #extra-snippet {
 	opacity: 0.4;
 	font-weight: 400;
+	line-height: 115%;
 }
 
 footer {
@@ -250,6 +251,10 @@ footer p {
 
 	.about article {
 		margin: 15%;
+	}
+
+	.about p {
+		line-height: 140%;
 	}
 
 	footer p {
