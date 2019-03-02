@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+*, *::before, *::after { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
+
 body {
 	margin: 0;
 	background-color: #F4F3F0;
@@ -74,6 +76,7 @@ div article img.ico-arrow {
 	background-color: #1A243C;
 	font-size: 18px;
 	padding: 20px;
+	height: 100vh;
 }
 
 article.landing {
@@ -81,7 +84,7 @@ article.landing {
 }
 
 .container {
-	height: 100vh;
+	height: 100%;
 	overflow: hidden;
 	display:flex;
 	flex-direction: row;
