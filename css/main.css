@@ -76,7 +76,8 @@ div article img.ico-arrow {
 	background-color: #1A243C;
 	font-size: 18px;
 	padding: 20px;
-	height: 100vh;
+	min-height: 100vh;
+	display: flex;
 }
 
 article.landing {
@@ -84,9 +85,9 @@ article.landing {
 }
 
 .container {
-	height: 100%;
 	overflow: hidden;
 	display:flex;
+	flex: 1 1 auto;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
@@ -175,8 +176,27 @@ article.proj {
 	color: #F4F3F0;
 }
 
-.extra-snippet {
+.about p {
+	font-weight: 300;
+}
+
+#extra-snippet {
 	opacity: 0.4;
+	font-weight: 400;
+}
+
+footer {
+	background-color: #141B2D;
+}
+
+footer p {
+	color: #FFFFFF;
+	text-align: left;
+	padding: 1% 1% 1% 5%;
+	margin: 0;
+	opacity: 0.2;
+	font-size: 0.8rem;
+	font-weight: 300;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 700px) {
@@ -230,5 +250,9 @@ article.proj {
 
 	.about article {
 		margin: 15%;
+	}
+
+	footer p {
+		text-align: center;
 	}
 }
