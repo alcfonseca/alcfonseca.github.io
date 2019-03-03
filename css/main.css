@@ -121,6 +121,11 @@ article.landing {
 	padding: 10% 5%;
 }
 
+.about section img {
+	max-width: 50%;
+	margin: 0 auto;
+}
+
 .container-proj img, .mini img, .about img {
 	max-width: 90%;
 	min-width: 250px;
