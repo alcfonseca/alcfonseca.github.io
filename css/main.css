@@ -475,12 +475,24 @@ header a:hover{
 		text-align: center;
 	}
 	
+	.proj-landing .right-half, .container-proj .right-half {
+		padding: 30px 0 0;
+	}
+	
+	.container-proj img {
+		max-width: 100%;
+	}
+	
 	.proj-landing article.landing {
 		padding: 40px 20px 40px 20px;
 	}
 	
 	.proj-landing .right-half {
 		padding: 0;
+	}
+	
+	.proj-grid img {
+		padding: 1%;
 	}
 	
 	article.proj {
@@ -497,6 +509,7 @@ header a:hover{
 	
 	.right-half .proj-colors img {
 		min-width: 100px;
+		max-width: 150px;
 		margin: 20px auto;
 	}
 	
