@@ -193,6 +193,16 @@ article.landing {
 	flex-wrap: wrap;
 }
 
+.flecha-container {
+	max-width: 90%;
+}
+
+.proj-grid.flecha-container img {
+	max-width: 84px;
+	width: 36px;
+	min-width: 36px;
+}
+
 .proj-colors {
 	display:flex;
 	flex: 1 1 auto;
