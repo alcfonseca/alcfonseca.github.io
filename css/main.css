@@ -414,7 +414,7 @@ hr.proj-credits {
 	display: flex;
 	align-items: center;
 	flex-direction: row;
-	padding: 2% 2% 2% 10%;
+	padding: 2% 10%;
 }
 
 .about-container {
@@ -457,7 +457,7 @@ footer {
 footer p {
 	color: #FFFFFF;
 	text-align: left;
-	padding: 1% 1% 1% 10%;
+	padding: 1% 10%;
 	margin: 0;
 	opacity: 0.2;
 	font-size: 0.8rem;
@@ -583,6 +583,10 @@ header a:hover{
 	.proj-landing img {
 		margin-bottom: 10px;
 	}
+	
+	.proj-landing h2 {
+		font-size: 1.5rem;
+	}
 
 	.right-half {
 		order: 1;
@@ -612,7 +616,11 @@ header a:hover{
 		padding: 0;
 		align-items: center;
 	}
-
+	
+	.bodycopy a {
+	margin: 10% 0;
+	}
+	
 	.about-container {
 	flex-direction: column;
 	}
