@@ -60,6 +60,11 @@ h5 {
 	margin: 0 10%;
 }
 
+.bodycopy a {
+	margin: 5% 0;
+	display: inline-block;
+}
+
 hr.proj-divider {
 	width: 20%;
 	min-width: 100px;
@@ -94,9 +99,13 @@ p {
 
 a {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
+	font-weight: 900;
 	color: rgba(26,36,60,1);
 	text-decoration: none;
+}
+
+.about p a {
+	text-decoration: underline;
 }
 
 address {
@@ -183,6 +192,49 @@ article.landing {
 	align-items: flex-start;
 }
 
+.next-proj {
+	background-color: rgba(233,231,225,1);;
+	display: flex;
+	align-items: center;
+}
+
+.next-proj a {
+	flex: 1;
+    order: 1;
+}
+
+.next-proj-divider {
+	    border-left: 1px solid rgba(26,36,60,0.1);
+}
+
+.next-proj article {
+	margin: 5% 20%;
+}
+
+.next-proj a:hover {
+	/* background-color: rgba(222,219,210,.8); */
+	background-color: rgba(255,255,255,.3);
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+  .next-proj a h3 {
+	margin-bottom: 10px;
+	margin-top: 0;
+	display: inline-block;
+}
+
+.next-proj h1 {
+	display: inline;
+	margin-top: 20px;
+}
+
+.next-proj div article img.ico-arrow {
+	height: 1.5rem;
+	width: 1.5rem;
+	margin-left: 10px;
+}
+
 .container-landing {
 	flex: 1 1 auto;
 	background-position: left, top right;
@@ -206,7 +258,7 @@ article.landing {
 	background-size: 60%;
 }
 
-.container img {
+.container img, .next-proj img {
 	max-width: 100%;
 	min-width: 250px;
 	height: auto;
@@ -358,7 +410,7 @@ hr.proj-credits {
 }
 
 .about {
-	background-color: rgba(240,236,225,1);
+	background-color: rgba(222,219,210,1);
 	display: flex;
 	align-items: center;
 	flex-direction: row;
@@ -405,7 +457,7 @@ footer {
 footer p {
 	color: #FFFFFF;
 	text-align: left;
-	padding: 1% 1% 1% 5%;
+	padding: 1% 1% 1% 10%;
 	margin: 0;
 	opacity: 0.2;
 	font-size: 0.8rem;
@@ -522,6 +574,15 @@ header a:hover{
 	.proj-landing .left-half, .container-proj .left-half, .proj-hero .left-half {
 		order: 1;
 	}
+	
+	.proj-landing h5 {
+	display: block;
+	margin: 0 0;
+	}
+	
+	.proj-landing img {
+		margin-bottom: 10px;
+	}
 
 	.right-half {
 		order: 1;
@@ -608,5 +669,23 @@ header a:hover{
 	
 	.credits {
 		width: 100%;
+	}
+	
+	.next-proj {
+		align-items: normal;
+		flex-direction: column;
+	}
+	
+	.next-proj .right-half {
+		padding: 0;
+	}
+	
+	.next-proj article {
+	margin: 5% 10%;
+	}
+	
+	.next-proj-divider {
+	    border-top: 1px solid rgba(26,36,60,0.1);
+		border-left: none;
 	}
 }
