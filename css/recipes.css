@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+body {
+	background-image: url("../img/pat_gingham.png");
+	background-repeat: repeat;
+	
+}
+
+header a.logo, header li a {
+	font-family: 'Coming Soon', sans-serif;
+}
+
+.header-recipe {
+	padding: 2% 10%;
+	background-color: #fffeeb;
+	margin-bottom: 3%;
+}
+
+.intro {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3%;
+}
+
+.intro h1 {
+	font-family: 'Coming Soon', sans-serif;
+	font-size: 3.5rem;
+	margin-bottom: 0;
+}
+
+.container-recipe {
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Coming Soon', sans-serif;
+	font-size: 1rem;
+}
+
+.container-recipe p {
+	font-family: 'Coming Soon', sans-serif;
+	font-size: 1rem;
+	line-height: 135%;
+}
+
+.container-recipe h2 {
+	font-family: 'Coming Soon', sans-serif;
+	font-size: 2rem;
+	padding-bottom: 2%;
+}
+
+.container-recipe h3 {
+	font-family: 'Coming Soon', sans-serif;
+	font-size: 1.2rem;
+	padding-top: 3%;
+}
+
+.container-recipe ul {
+	list-style: circle;
+	display: block;
+	margin: 2% 5%;
+	color: rgba(26,36,60,1);
+}
+
+.container-recipe img {
+	max-width: 500px;
+}
+
+.container-recipe .left-half {
+	flex-grow: 0.5;
+	margin: 0 4%;
+}
+
+.paper {
+	background: rgba(255,255,255,0.9);
+	/* margin: 2% 2%; */
+	padding: 4%;
+	max-width: 700px;
+}
+
+.shadow {
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+
+.footer-recipe {
+	margin-top: 5%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+	.container-recipe {
+		flex-flow: column;
+	}
+	
+	.container-recipe .right-half {
+		padding: 0;
+		order: 2;
+	}
+	
+	.container-recipe img {
+		max-width: 100%;
+	}
+	
+	.container-recipe .left-half {
+		margin: 4% 0;
+	}
+}
