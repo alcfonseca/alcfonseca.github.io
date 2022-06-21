@@ -7,6 +7,10 @@
 
 *, *::before, *::after { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	background-color: #FAFAFA;
@@ -15,7 +19,7 @@ body {
 
 .container-proj h1, .about h1{
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.4rem;
+	font-size: 1.8rem;
 	margin-top: 0;
 	margin-bottom: 10px;
 }
@@ -30,7 +34,7 @@ h1 {
 
 h2 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.4rem;
+	font-size: 1.8rem;
 	font-weight: 700;
 	color: rgba(21,18,22,1);
 	margin: 10px 0;
@@ -40,7 +44,7 @@ h3 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.2rem;
 	font-weight: 500;
-	color: rgba(21,18,22,1);
+	color: rgba(26,36,60,1);
 	opacity: .6;
 	margin: 5px 0px 5px 0px;
 }
@@ -261,6 +265,41 @@ a.button:hover {
     transition: all 0.2s ease-in;
 }
 
+a.button-secondary{
+	font-size: 1rem;
+	display: inline-block;
+	border-radius: 4px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 8px;
+	padding-right: 8px;
+	border: solid 2px #1D2AB6;
+	font-weight: 400;
+	text-decoration: none;
+	color: #1D2AB6;
+	/* Firefox */
+    -moz-transition: all 0.2s ease-in;
+    /* WebKit */
+    -webkit-transition: all 0.2s ease-in;
+    /* Opera */
+    -o-transition: all 0.2s ease-in;
+    /* Standard */
+    transition: all 0.2s ease-in;
+}
+
+a.button-secondary:hover {
+	background-color: #1D2AB6;
+	color: #FFFFFF;
+	/* Firefox */
+    -moz-transition: all 0.2s ease-in;
+    /* WebKit */
+    -webkit-transition: all 0.2s ease-in;
+    /* Opera */
+    -o-transition: all 0.2s ease-in;
+    /* Standard */
+    transition: all 0.2s ease-in;
+}
+
 /*
 ▲▲▲▲▲▲▲▲▲▲▲▲ LANDING ▲▲▲▲▲▲▲▲▲▲▲▲
 ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪
@@ -296,6 +335,16 @@ article.landing {
 
 .about p a {
 	text-decoration: underline;
+}
+
+article.landing img.ico-star {
+	top: 0em;
+	height: 1rem;
+	width: 1rem;
+	display: inline;
+	min-width: 1rem;
+	position: relative;
+	margin-left: 6px;
 }
 
 article img.ico-arrow, div article img.ico-arrow {
@@ -406,6 +455,16 @@ footer hr {
 	padding: 0 10%;
 }
 
+.index .left-half{
+	flex-grow: 2;
+
+}
+
+.index .right-half{
+	flex-grow: 2;
+	align-self: center;
+}
+
 .proj-hero .right-half {
 	padding: 0 10% 0 0;
 }
@@ -488,16 +547,6 @@ footer hr {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-}
-
-.flecha-container {
-	max-width: 90%;
-}
-
-.proj-grid.flecha-container img {
-	max-width: 84px;
-	width: 36px;
-	min-width: 36px;
 }
 
 .proj-colors {
@@ -605,6 +654,17 @@ hr.proj-credits {
 	padding: 0;
 }
 
+h3.token {
+	border: solid 2px rgba(26,36,60, .2);
+	padding: 2px 8px;
+	display:  inline-block;
+	border-radius: 4px;
+	font-weight: 300;
+	margin-right: 3px;
+	margin-top: 3px;
+	margin-bottom: 10px;
+}
+
 /*
 ▲▲▲▲▲▲▲▲▲ PROJECT PAGE ▲▲▲▲▲▲▲▲▲▲
 ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪
@@ -703,6 +763,14 @@ hr.proj-credits {
 	html {
 		font-size: 80%;
 	}
+
+a.button-secondary {
+	font-size: 1.2rem;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
 
 	.content article {
 		max-width: 276px;
