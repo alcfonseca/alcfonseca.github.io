@@ -457,7 +457,8 @@ footer hr {
 
 .index .left-half{
 	flex-grow: 2;
-
+	display: flex;
+	justify-content: flex-end;
 }
 
 .index .right-half{
@@ -788,6 +789,10 @@ a.button-secondary {
 		padding: 2% 4%;
 	}
 
+	.index .left-half{
+	justify-content: space-between;
+	}
+
 	.container-landing {
 		background-image: url("../img/bg.png"), url("../img/landing_art_light.png");
 		background-size: 60%, 100%;
@@ -955,6 +960,11 @@ a.button-secondary {
 	.col_big img {
 		width: 370px;
 	}
+
+	.index .left-half{
+	justify-content: space-between;
+	}	
+
 
 	.col_smol img {
 		width: 370px;
