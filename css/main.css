@@ -338,7 +338,7 @@ article.landing {
 	text-decoration: underline;
 }
 
-article.landing img.ico-star {
+article.landing img.ico-star, div.proj-hero img.ico-star {
 	top: 0em;
 	height: 1rem;
 	width: 1rem;
@@ -440,6 +440,10 @@ footer hr {
 ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪
 ▼▼▼▼▼▼▼▼▼ PROJECT PAGE ▼▼▼▼▼▼▼▼▼▼
 */
+
+.about-img {
+	margin-top: 5%;
+}
 
 .proj-hero {
 	display: flex;
