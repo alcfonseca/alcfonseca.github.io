@@ -10,7 +10,7 @@
 body {
 	margin: 0;
 	background-color: darkblue;
-	background-image: url("90img/bg1.png");
+	background-image: url("../90img/bg1.png");
 	font-size: 18px;
 	font-family: monospace;
 	color: yellow;
@@ -20,6 +20,7 @@ body {
 .content {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 
 table {
