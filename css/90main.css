@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*
+▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪
+▼▼▼▼▼▼▼▼▼ GENERAL RULES ▼▼▼▼▼▼▼▼▼
+*/
+
+*, *::before, *::after { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
+
+body {
+	margin: 0;
+	background-color: darkblue;
+	background-image: url("90img/bg1.png");
+	font-size: 18px;
+	font-family: monospace;
+	color: yellow;
+	
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+table {
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+}
+
+tbody {
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	margin: 0 auto;
+}
+
+.title h1 {
+	display: inline-block;
+}
+
+
