@@ -45,7 +45,7 @@ h3 {
 	font-size: 1.2rem;
 	font-weight: 500;
 	color: rgba(26,36,60,1);
-	opacity: .6;
+	opacity: .9;
 	margin: 5px 0px 5px 0px;
 }
 
@@ -653,10 +653,6 @@ footer hr {
 	margin: 0 1%;
 }
 
-.container-book {
-	padding: 5% 5%;
-}
-
 .about section img {
 	max-width: 50%;
 	margin: 0 auto;
@@ -784,7 +780,7 @@ hr.proj-credits {
 }
 
 h3.token {
-	border: solid 2px rgba(26,36,60, .2);
+	border: solid 2px rgba(26,36,60, .4);
 	padding: 2px 8px;
 	display:  inline-block;
 	border-radius: 4px;
