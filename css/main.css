@@ -94,6 +94,10 @@ a:hover {
 	font-weight: 500;
 }
 
+.highlight {
+	background-color: #ddf0fd;
+}
+
 /*
 ▲▲▲▲▲▲▲▲▲ GENERAL RULES ▲▲▲▲▲▲▲▲▲
 ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪
@@ -140,6 +144,28 @@ a:hover {
 
 /*
 ▲▲▲▲▲▲▲▲▲▲▲▲ LIGHTBOX ▲▲▲▲▲▲▲▲▲▲▲
+▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪
+▼▼▼▼▼▼▼▼▼▼▼▼▼ IMG ZOOM HOVER ▼▼▼▼▼▼▼▼▼▼▼▼
+*/
+
+/* [1] The container */
+.img-hover-zoom {
+  height: auto; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .4s ease-in-out;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.05);
+}
+
+/*
+▲▲▲▲▲▲▲▲▲▲▲▲ IMG ZOOM HOVER ▲▲▲▲▲▲▲▲▲▲▲
 ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪
 ▼▼▼▼▼▼▼▼▼▼▼▼▼ HEADER ▼▼▼▼▼▼▼▼▼▼▼▼
 */
@@ -639,7 +665,7 @@ footer hr {
 .container-proj {
 	display:flex;
 	flex-direction: row;
-	padding: 5% 10%;
+	padding: 8% 8%;
 }
 
 .container-full-img {
@@ -796,6 +822,7 @@ p.subtitle {
 	max-width: 90%;
 	padding-top: 2rem;
 }
+
 
 /*
 ▲▲▲▲▲▲▲▲▲ PROJECT PAGE ▲▲▲▲▲▲▲▲▲▲
