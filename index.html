@@ -22,103 +22,108 @@
 
 <body>
 	<header>
-		<a href="index.html" class="logo"><img src="img/logo.png" alt="The letters ALCF, stamped"/></a>
-		<nav>
-			<input id="menu-toggle" type="checkbox" />
-    	<label class='menu-button-container' for="menu-toggle">
-    		<div class='menu-button'></div>
-  		</label>
-			<ul class= "menu">
-				<li><a href="index.html#section-proj">Work</a></li>
-				<li><a href="about.html">About Me</a></li>
-				<li><a href="#about">Contact</a></li>
-				<li><a href="anaFonseca_CV.pdf" target="_blank">Download CV</a></li>
-			</ul>
-		</nav>
+		<div class="shellbar">
+			<a href="index.html" class="logo"><img src="img/logo.png" alt="The letters ALCF, stamped"/></a>
+			<nav>
+				<input id="menu-toggle" type="checkbox" />
+			<label class='menu-button-container' for="menu-toggle">
+				<div class='menu-button'></div>
+			</label>
+				<ul class= "menu">
+					<li><a href="index.html#section-proj">Work</a></li>
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="#about">Contact</a></li>
+					<li><a href="anaFonseca_CV.pdf" target="_blank">Download CV</a></li>
+				</ul>
+			</nav>
+		</div>
+	
+		<section class="bg-landing container-landing">
+			<article class="landing">
+				<p>Hey! I’m Ana Luísa<img class="ico-star" src="img/tinystar.png"/></p>
+				<h1>Brazil-born product designer currently based in Schnitzel-land, Germany, with a creative streak and a passion for all things geeky.</h1>
+				<a class="button" href="#section-proj">Go to Projects</a>
+			</article>
+		</section>
 	</header>
-	<section class="bg-landing container-landing">
-		<article class="landing">
-			<p>Hey! I’m Ana Luísa<img class="ico-star" src="img/tinystar.png"/></p>
-			<h1>Brazil-born product designer currently based in Schnitzel-land, Germany, with a creative streak and a passion for all things geeky.</h1>
-			<a class="button" href="#section-proj">See Projects</a>
-		</article>
-	</section>
 
 <!--
 ▲▲▲▲▲▲▲▲▲▲▲ Hero Section ▲▲▲▲▲▲▲▲▲▲▲
 ▼▼▼▼▼▼▼▼▼▼▼▼▼ xBuilder ▼▼▼▼▼▼▼▼▼▼▼▼▼
 -->
+	<main>
+		<section class="container-proj index" id="section-proj">
+			<div class="left-half img-hover-zoom">
+				<a href="proj_xbuilder.html"><img src="img/proj_xbuilder.png" alt="SAP Build's new process editor"/></a>
+			</div>
+			<div class="right-half">
+				<article class="proj">
+					<h1>Simplifying the Modeling Experience</h1>
+					<h3 class="token">UX</h3>
+					<h3 class="token">User Testing</h3>
+					<h3 class="token">2023</h3>
+					<p>Empowering users with a simple and intuitive modeling experience and improving the SUS Score by 20 points.</p>
+					<a class="button-secondary" href="proj_xbuilder.html">Open Case Study</a>
+			</div>
+		</section>
+	<!--
+	▲▲▲▲▲▲▲▲▲▲▲ xBuilder ▲▲▲▲▲▲▲▲▲▲▲
+	▼▼▼▼▼▼▼▼▼▼▼▼▼ Help ▼▼▼▼▼▼▼▼▼▼▼▼▼
+	-->
+		<section class="container-proj index" id="section-proj">
+			<div class="left-half img-hover-zoom">
+				<a href="proj_help.html"><img src="img/proj_help.png" alt="SAP Build's process editor with the SAP Companion open"/></a>
+			</div>
+			<div class="right-half">
+				<article class="proj">
+					<h1>Collaborating Across Teams to Integrate SAP Companion</h1>
+					<h3 class="token">UX</h3>
+					<h3 class="token">User Testing</h3>
+					<h3 class="token">2022</h3>
+					<p>Streamlining user assistance with SAP Companion integration for SAP Build Process Automation.</p>
+					<a class="button-secondary" href="proj_help.html">Open Case Study</a>
+				</article>
+			</div>
+		</section>
+	<!--
+	▲▲▲▲▲▲▲▲▲▲▲▲▲ Help ▲▲▲▲▲▲▲▲▲▲▲▲▲
+	▼▼▼▼▼▼▼▼▼▼▼ Settings ▼▼▼▼▼▼▼▼▼▼▼
+	-->
 	<section class="container-proj index" id="section-proj">
-		<div class="left-half img-hover-zoom">
-			<a href="proj_xbuilder.html"><img src="img/proj_xbuilder.png" alt="SAP Build's new process editor"/></a>
-		</div>
-		<div class="right-half">
-			<article class="proj">
-				<h1>Simplifying the Modeling Experience</h1>
-				<h3 class="token">Product Design</h3>
-				<h3 class="token">User Testing</h3>
-				<h3 class="token">2023</h3>
-				<p>Empowering users with a simple and intuitive modeling experience and improving the SUS Score by 20 points.</p>
-				<a class="button-secondary" href="proj_xbuilder.html">View Case Study</a>
-		</div>
-	</section>
-<!--
-▲▲▲▲▲▲▲▲▲▲▲ xBuilder ▲▲▲▲▲▲▲▲▲▲▲
-▼▼▼▼▼▼▼▼▼▼▼▼▼ Help ▼▼▼▼▼▼▼▼▼▼▼▼▼
--->
-	<section class="container-proj index" id="section-proj">
-		<div class="left-half img-hover-zoom">
-			<a href="proj_help.html"><img src="img/proj_help.png" alt="SAP Build's process editor with the SAP Companion open"/></a>
-		</div>
-		<div class="right-half">
-			<article class="proj">
-				<h1>Collaborating Across Teams to Integrate SAP Companion</h1>
-				<h3 class="token">Product Design</h3>
-				<h3 class="token">User Testing</h3>
-				<h3 class="token">2022</h3>
-				<p>Streamlining user assistance with SAP Companion integration for SAP Build Process Automation.</p>
-				<a class="button-secondary" href="proj_help.html">View Case Study</a>
-			</article>
-		</div>
-	</section>
-<!--
-▲▲▲▲▲▲▲▲▲▲▲▲▲ Help ▲▲▲▲▲▲▲▲▲▲▲▲▲
-▼▼▼▼▼▼▼▼▼▼▼ Settings ▼▼▼▼▼▼▼▼▼▼▼
--->
-<section class="container-proj index" id="section-proj">
-		<div class="left-half img-hover-zoom">
-			<a href="proj_settings.html"><img src="img/proj_settings.png" alt="SAP Process Automation setting's page"/></a>
-		</div>
-		<div class="right-half">
-			<article class="proj">
-				<h1>Uniting products in Global Settings</h1>
-				<h3 class="token">Product Design</h3>
-				<h3 class="token">2021</h3>
-				<p>Creating a central place and template for each product area to add their own configuration needs.</p>
-				<a class="button-secondary" href="proj_settings.html">View Case Study</a>
-			</article>
-		</div>
-	</section>
-<!--
-▲▲▲▲▲▲▲▲▲▲▲▲▲ Settings ▲▲▲▲▲▲▲▲▲▲▲▲▲
-▼▼▼▼▼▼▼▼▼▼▼ Flatland ▼▼▼▼▼▼▼▼▼▼▼-->
+			<div class="left-half img-hover-zoom">
+				<a href="proj_settings.html"><img src="img/proj_settings.png" alt="SAP Process Automation setting's page"/></a>
+			</div>
+			<div class="right-half">
+				<article class="proj">
+					<h1>Uniting products in Global Settings</h1>
+					<h3 class="token">UX</h3>
+					<h3 class="token">2021</h3>
+					<p>Creating a central place and template for each product area to add their own configuration needs.</p>
+					<a class="button-secondary" href="proj_settings.html">Open Case Study</a>
+				</article>
+			</div>
+		</section>
+	<!--
+	▲▲▲▲▲▲▲▲▲▲▲▲▲ Settings ▲▲▲▲▲▲▲▲▲▲▲▲▲
+	▼▼▼▼▼▼▼▼▼▼▼ Flatland ▼▼▼▼▼▼▼▼▼▼▼-->
 
-<section class="container-proj index">
-		<div class="left-half img-hover-zoom">
-			<a href="proj_flatland.html"><img src="img/proj_flatland.png" alt="App icon for SAP for Me"/></a>
-		</div>
-		<div class="right-half">
-			<article class="proj">
-				<h1>Turning a book into an online reading experiencen</h1>
-				<h3 class="token">Product Design</h3>
-				<h3 class="token">Branding</h3>
-				<h3 class="token">User Testing</h3>
-				<h3 class="token">2018</h3>
-				<p>My thesis project in university, aiming to bring one of my favorite books into the digital realm.</p>
-				<a class="button-secondary" href="proj_flatland.html">View Case Study</a>
-			</article>
-		</div>
-	</section>
+	<section class="container-proj index">
+			<div class="left-half img-hover-zoom">
+				<a href="proj_flatland.html"><img src="img/proj_flatland.png" alt="App icon for SAP for Me"/></a>
+			</div>
+			<div class="right-half">
+				<article class="proj">
+					<h1>Turning a book into an online reading experiencen</h1>
+					<h3 class="token">UX</h3>
+					<h3 class="token">Branding</h3>
+					<h3 class="token">User Testing</h3>
+					<h3 class="token">2018</h3>
+					<p>My thesis project in university, aiming to bring one of my favorite books into the digital realm.</p>
+					<a class="button-secondary" href="proj_flatland.html">Open Case Study</a>
+				</article>
+			</div>
+		</section>
+	</main>
 <!--
 ▲▲▲▲▲▲▲▲▲▲▲▲▲ Flatland ▲▲▲▲▲▲▲▲▲▲▲▲▲
 ▼▼▼▼▼▼▼▼▼▼▼ App Icon ▼▼▼▼▼▼▼▼▼▼▼
@@ -133,7 +138,7 @@
 				<h3 class="token">Branding</h3>
 				<h3 class="token">2020</h3>
 				<p>Representing the new SAP for Me app with the development of a new app icon.</p>
-				<a class="button-secondary" href="proj_appicon.html">View Case Study</a>
+				<a class="button-secondary" href="proj_appicon.html">Open Case Study</a>
 			</article>
 		</div>
 	</section>
