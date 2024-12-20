@@ -67,6 +67,15 @@ p {
 	font-size: 0.95em;
 }
 
+li {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	max-width: 75ch;
+	color: rgba(21,18,22,1);
+	line-height: 130%;
+	font-size: 0.95em;
+}
+
 a {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
@@ -510,6 +519,10 @@ article img.ico-arrow, div article img.ico-arrow {
 	color: #FAFAFA;
 }
 
+.about a {
+	text-decoration: underline;
+}
+
 .about-container {
 	display: flex;
 	flex-direction: row;
@@ -625,7 +638,7 @@ footer hr {
 }
 
 .proj-hero .right-half {
-	padding: 0 10% 0 0;
+	padding: 5% 10% 0 0;
 }
 
 .proj-hero .container {
