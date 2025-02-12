@@ -26,7 +26,7 @@ body {
 
 h1 {
 	font-family: 'Roboto', serif;
-	font-size: 2rem;
+	font-size: 4.5rem;
 	line-height: 115%;
 	color: rgba(21,18,22,1);
 	margin-bottom: 20px;
@@ -183,7 +183,7 @@ a:hover {
 
 .logo {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 	margin: 0;
 	/* Firefox */
     -moz-transition: all 0.2s ease-in;
@@ -195,9 +195,14 @@ a:hover {
     transition: all 0.2s ease-in;
 }
 
+.logo img {
+	height: 2rem;
+	width: 2rem;
+}
+
 a.logo:hover {
-	border-bottom: 3px solid rgba(26,36,60,0);
-	transform: scale(1.1);
+	/*border-bottom: 3px solid rgba(26,36,60,0);*/
+	transform: scale(1.3) rotate(0.1turn);
 	/* Firefox */
     -moz-transition: all 0.2s ease-in;
     /* WebKit */
@@ -206,6 +211,7 @@ a.logo:hover {
     -o-transition: all 0.2s ease-in;
     /* Standard */
     transition: all 0.2s ease-in;
+	text-decoration: none;
 }
 
 nav {
@@ -237,7 +243,13 @@ ul {
 	border-bottom: 3px solid rgba(26,36,60,0);
 }
 
-.shellbar a:hover{
+.logo-container {
+	display: flex;
+	flex-direction: row;
+	align-items: anchor-center;
+}
+
+.menu a:hover{
 	border-bottom: 3px solid rgba(29,42,182,1);
 	text-decoration: none;
 }
@@ -383,6 +395,10 @@ ul {
 	font-weight:  500;
 }
 
+.landing p {
+	margin-bottom: 2rem;
+}
+
 a.button{
 	display: inline-block;
 	border-radius: 10px;
@@ -491,8 +507,8 @@ article.landing {
 article.landing img.ico-star, div.proj-hero img.ico-star {
 	top: 0em;
 	z-index: 1;
-	height: 1rem;
-	width: 1rem;
+	height: 2rem;
+	width: 2rem;
 	display: inline;
 	min-width: 1rem;
 	position: relative;
@@ -887,7 +903,7 @@ p.subtitle {
 	color: rgba(250,250,250,1)
 }
 
-.next-proj h1 {
+.next-proj h2 {
 	display: inline;
 	margin-top: 20px;
 	color: rgba(250,250,250,1)
