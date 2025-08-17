@@ -17,7 +17,7 @@ body {
 	font-size: 18px;
 }
 
-.container-proj h1, .about h1{
+.container-proj h1, .highlights h1, .about h1{
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.8rem;
 	margin-top: 0;
@@ -497,6 +497,52 @@ article.landing {
 /*
 ▲▲▲▲▲▲▲▲▲ PROJECT THUMBS ▲▲▲▲▲▲▲▲
 ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪
+▼▼▼▼▼▼▼▼▼▼▼▼▼ HIGHLIGHTS ▼▼▼▼▼▼▼▼▼▼▼▼▼
+*/
+
+.highlights {
+	padding: 8% 8%;
+}
+
+.highlights h1 {
+	font-size: 1.6rem;
+}
+
+.highlights-grid {
+	display: flex;
+	gap: 4.5rem;                /* space between cards */
+	flex-wrap: wrap;             /* wrap on smaller screens */
+	margin-top: 1.5rem;
+}
+
+.highlights-card {
+	flex: 1 1 360px;             /* grow, shrink, base width */
+  	max-width: 360px;
+  	text-decoration: none;
+ 	color: inherit;
+}
+
+.highlights-img {
+	border-radius: 18px;
+}
+
+.highlights-card img {
+	max-width: 100%;
+    min-width: 250px;
+    height: auto;
+    display: block;
+}
+
+.highlights-card h2 {
+	margin-top: 1.2rem;
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
+
+/*
+▲▲▲▲▲▲▲▲▲ HIGHLIGHTS ▲▲▲▲▲▲▲▲
+▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪
 ▼▼▼▼▼▼▼▼▼▼▼▼▼ ABOUT ▼▼▼▼▼▼▼▼▼▼▼▼▼
 */
 
@@ -557,9 +603,9 @@ article img.ico-arrow, div article img.ico-arrow {
 	order: 2;
 }
 
-//*.about h2, .about p, .about a, .about h1{
+/*.about h2, .about p, .about a, .about h1{
 	color: rgba(244, 243, 240,1);
-}*//
+}*/
 
 .about p {
 	font-weight: 400;
@@ -839,11 +885,12 @@ hr.proj-credits {
 }
 
 h3.token {
-	border: solid 2px rgba(26,36,60, .4);
+	border: solid 2px rgba(26,36,60, .2);
 	padding: 2px 8px;
 	display:  inline-block;
-	border-radius: 4px;
+	border-radius: 8px;
 	font-weight: 400;
+	font-size: 1.0rem;
 	margin-right: 3px;
 	margin-top: 3px;
 	margin-bottom: 10px;
@@ -957,7 +1004,7 @@ p.subtitle {
 	}
 
 a.button-secondary {
-	font-size: 1.2rem;
+	font-size: 2rem;
 	padding-bottom: 8px;
 	padding-top: 8px;
 	padding-left: 10px;
@@ -987,6 +1034,7 @@ a.button-secondary {
 	.container-landing {
 		background-image: url("../img/bg.png"), url("../img/landing_art_light.png");
 		background-size: 60%, 100%;
+		background-blend-mode: overlay;
 	}
 
 	.bg-landing {
@@ -1047,6 +1095,10 @@ a.button-secondary {
 	.container-proj-mini .left-half {
 		padding: 30px 30px 0;
 		order: 1;
+	}
+
+	h3.token {
+		font-size: 2.0rem;
 	}
 
 	.mini article.proj {
@@ -1144,6 +1196,19 @@ a.button-secondary {
 		font-size: 90%;
 	}
 
+	a.button-secondary {
+	font-size: 1.4rem;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+
+	h3.token {
+	padding: 2px 8px;
+	font-size: 1.2rem;
+	}
+
 	.content article {
 		max-width: 370px;
 	}
@@ -1163,10 +1228,15 @@ a.button-secondary {
 
 	.container-landing {
 		background-size: 60%, 100%;
+		background-blend-mode: overlay;
 	}
 
 	.bg-landing {
 		min-height: 50vh;
+	}
+
+	.container-landing {
+		background-blend-mode: overlay;
 	}
 
 	h1 {
@@ -1326,6 +1396,10 @@ a.button-secondary {
 
 	.col_smol img{
 		width: 228px;
+	}
+
+	.container-landing {
+		background-blend-mode: overlay;
 	}
 
 	.flex_row.flex_center {
